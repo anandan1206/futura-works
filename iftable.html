@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border: 4px solid black;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <form>
+            <table>
+                <tr>
+                    <th>
+                        name :</th><td><input type="text" id="name" ><span id="sp1" style="color: red;"></span></td>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        age</th><td><input type="number" id="age"onkeyup="clearmsg('sp2')"><span id="sp2" style="color: red;"></span></td>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        email</th><td><input type="text"id="email"onkeyup="clearmsg('sp3')"><span id="sp3" style="color: red;"></span></td>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        mobile</th><td><input tuype="text"id="mobile"onkeyup="clearmsg('sp4')"><span id="sp4" style="color: red;"></span></td>
+                    </th>
+                </tr>
+                <tr>
+                    <th>username</th><td><input type="text"id="username"onkeyup="clearmsg('sp5')"><span id="sp5" style="color: red;"></span></td>
+                </tr>
+                <tr>
+                    <th><button onclick=" return validate()">submit</button></th>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+ <script>
+     function validate(){
+         var name=document.getElementById('name').value;
+         var age=document.getElementById ('age').value;
+         var email=document.getElementById('email').value;
+         var mobile=document.getElementById('mobile').value;
+          var username=document.getElementById('username').value;
+          
+          if(name=="")
+          {document.getElementById ('sp1').innerHTML="enter the name ";
+          return false;}
+
+          if(age=="")
+          {document.getElementById ('sp2').innerHTML="enter the age";
+          return false;
+     }
+           
+          if (email=="")
+          {
+              document.getElementById('sp3').innerHTML="enter the email";
+              return false;
+          }
+          
+          if(mobile=="")
+          {
+              document.getElementById('sp4').innerHTML="enter the number";
+              return false;
+          }
+
+          if (username=="")
+          {
+              document.getElementById('sp5').innerHTML="enter the username";
+              return false;
+          }
+
+    
+     }
+     function clearmsg(sp)
+     { document.getElementById(sp).innerHTML="";}
+     
+ </script>
+</html>

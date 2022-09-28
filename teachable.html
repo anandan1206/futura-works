@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+    background-color: bisque;
+}
+.a{background-color: rgb(233, 78, 109);
+height: 60%;
+width: 70%;}
+    </style>
+
+</head>
+<body><center>
+<div class="a">
+   <div> 
+
+   
+    <h1>STUDENT REGISTRATION TABLE</h1>
+
+
+
+    
+    <form>
+    <table cellpadding="5" cellspaceing="10">
+        <tr>
+            <th>FIRSTNAME</th><td><input type="text"></td>
+        </tr>
+        <tr>
+            <th>LASTNAME</th><td><input type="text"></td>
+        </tr>
+        <tr>
+            <th>PHOTO</th><td><input type="file"></td>
+        </tr>
+        <tr>
+            <th>DATE OF BIRTH</th><td><input type="date"></td>
+
+        </tr>
+        <tr>
+            <th>EMAIL ID</th><td><input type="email"></td>
+        </tr>
+        <tr>
+            <th>
+                 PASSWORD</th><td><input type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+            </th>
+        </tr>
+        <tr>
+            <th>GENDER</th><td>Male <input type="radio" name="GENDER"> Female <input type="radio" name="GENDER"></td>
+        </tr>
+        <th>ADDRESS</th><td><textarea cols="30" rows="10"></textarea></td>
+    </tr>
+    <tr>
+        <th>CITY</th><td><input type="text"></td>
+    </tr>
+    <tr>
+        <th>PINCODE</th><td><input type="text" maxlength="6" minlength="6" required></td>
+    </tr>
+    <tr>
+        <th>STATE</th><td><input type="text"></td>
+    </tr>
+    <tr>
+        <th>COUNTRY</th><td>
+            <select>
+                <option value="India"></option>
+                <option value="Pakisthan"></option>
+                <option value="South Africa"></option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <th>HOBBIES</th><td>Drawing <input type="radio">Singing <input type="radio">Dancing <input type="radio">Sketching <input type="radio">Others <input type="radio"></td>
+    </tr>
+    <tr>
+        <td>QUALIFICATION</td>
+        <td>
+    <table>
+        <tr>
+            
+            <th>Sl.No.Examination</th>
+            <th>Board</th>
+            <th>Percentage</th>
+            <th>Year of Passsing</th>
+        </tr>
+        <tr>
+            <td>1   Class X</td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>2   Class XII</td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>3   Graduation</td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>4   Masters</td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+      
+    </table>
+</td>
+    </tr>
+<tr>
+    <tr>
+        <th>COURSES APPLIED FOR</th><td>BCA <input type="radio"> Bcom <input type="radio"> Bsc<input type="radio"> BA<input type="radio"></td>
+        <tr>
+            <th colspan="2"><center><button>ok</button><button>Reset</button></center></th>
+            
+                
+            
+        </tr>
+        
+        
+    </tr>
+</tr>
+
+
+    </table>
+    </form>
+    
+</div><br>
+</div>
+</center>
+</body>
+
+</html>

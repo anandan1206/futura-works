@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+enter the number : <input type="text" id="num"></br></br>
+<button onclick="num()">num</button>
+
+</body>
+<script>
+    function num()
+    {
+        var a;
+        a= Number(document.getElementById('num').value);
+        if (a==1)
+        {
+           alert('sunday');
+        }
+    
+        else if(a==2)
+        {
+            alert('monday');
+        }
+        else if(a==3)
+        {
+            alert("tuesday");
+        }
+        else if(a==4)
+        {
+            alert("wenesday");
+        }
+        else if(a==5)
+        {
+            alert("thersday");
+        }
+        else if(a==6)
+        {
+            alert("friday");
+
+        }
+        else if (a==7)
+        {
+            alert("satarday");
+        }
+        else
+        {
+            alert("invalid");
+        }
+    }
+</script>
+</html>
